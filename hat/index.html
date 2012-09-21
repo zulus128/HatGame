@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>       
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"> 
+        <meta name = "format-detection" content = "telephone=no"/>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width;" />		
+        <title>Hat</title>
+        <style type="text/css" media="screen">@import "css/jquery.mobile-1.0a2.css";</style>        
+		<style type="text/css" media="screen">@import "css/style.css";</style>		
+        <script src="js/jquery-1.4.4.min.js"></script>		
+        <script src="js/jquery.mobile-1.0a2.js" type="application/x-javascript" charset="utf-8"></script>	
+		<script src="js/script.js" type="application/x-javascript"></script>
+    </head>
+	<body>	
+	
+		<div data-role="page" id="main_page" data-theme="b">
+			<img src="img/main_menu_back.png"/>
+				
+			<img style="position: absolute; left: 86px; top: 337px;" id="main_btn_start" src="img/main_btn_start.png" />
+			<img style="position: absolute; left: 237px; top: 485px;" id="main_btn_settings" src="img/main_btn_settings.png" />			
+			<img style="position: absolute; left: 318px; top: 642px;" id="main_btn_rule" src="img/main_btn_rule.png" />			
+		</div>		
+		
+		<div data-role="page" id="enter_players_page" data-theme="b">
+			<img style="position: absolute;" src="img/enter_players_back.png"/>
+			<img style="position: absolute; left: 320px; top: 885px;" id="players_btn_next" src="img/btn_next.png" />
+			
+			<div style="position: relative; margin-left: 76px; margin-top: 354px;" id="players_box"></div>			
+		</div>
+		
+		<div data-role="page" id="enter_words_page" data-theme="b">
+			<img src="img/enter_words_back.png"/>
+			<span style="position: absolute; left: 102px; top: 445px;" id="player_name">Игрок 1</span>
+			<img style="position: absolute; left: 320px; top: 885px;" id="words_btn_next" src="img/btn_next.png" />
+			
+			<div id="words" style="position: absolute; left: 95px; top: 528px;"></div>
+		</div>
+		
+		<div data-role="page" id="game_page" data-theme="b">
+			<img style="position: absolute;" src="img/game_back.png"/>
+			<div style="position: absolute; left: 633px;">
+				<span style="position: absolute; top: 10px; " id="game_txt_time">20</span>
+				
+				<img style="position: absolute; top: 105px;" id="game_btn_pause" src="img/game_btn_pause.png" />
+				<img style="position: absolute; top: 231px;" id="game_btn_stop" src="img/game_btn_stop.png" />
+				<img style="position: absolute; top: 356px;" id="game_btn_play" src="img/game_btn_play.png" />
+			</div>
+		</div>		
+		
+	</body>
+</html>

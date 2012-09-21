@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Candara; 
+    src: local("Candara"), 
+         url(font/Candara.ttf); 
+}
+
+@font-face {
+    font-family: Alexandra; 
+    src: local("Alexandra Zeferino Three"), 
+         url(font/Alexandra.ttf); 
+}
+
+html{
+	/*overflow: hidden;*/
+}
+
+input.enter_player{
+	float: left;
+	width: 449px;
+	border: none;
+	padding: 9px 10px;
+	background: url(../img/edit_name.png) no-repeat 0 0;
+	font: bold 25px Candara;
+}
+
+input.enter_word{
+	width: 570px;
+	border: none;
+	padding: 20px 10px;
+	background: url(../img/edit_word.png) no-repeat 0 0;
+	text-align: center;
+	font: bold 46px Candara;
+	
+	-webkit-transition: -webkit-transform 0.3s linear;
+	-webkit-transform-origin: 0px 0px;	
+}
+
+input:focus {
+	outline: none;
+}
+
+
+#main_btn_settings{
+	-webkit-transform: translate(0px) rotate(0deg) scale(1);
+	-webkit-transition: -webkit-transform 1s linear;
+}
+
+.radio{
+	float: left;
+	margin-left: 26px;
+	margin-top: 4px;
+}
+.radio-men{
+	height: 46px;
+	width: 51px;
+	background: url(../img/radio_men.png) no-repeat 0 0;
+}
+.radio-women{
+	height: 46px;
+	width: 51px;
+	background: url(../img/radio_women.png) no-repeat 0 0;
+}
+
+.radio-active{
+	background-position: 0px -46px;
+}
+
+#player_name{
+	font: bold 50px Candara;
+	color: white;
+}
+
+.word{
+	position: absolute; 
+	top: 348px; 
+	left: 157px;
+	width: 449px;
+	height: 220px;
+	 
+	-webkit-transform-origin: 50% 50%;
+	-webkit-transition: -webkit-transform 0.4s ease;
+	background: url(../img/word.png) no-repeat 0 0;
+	text-align: center;
+}
+
+.word-text{
+	position: relative; 
+	top: 60px;
+	color: #4D4D4D;
+	font: 70px Alexandra;
+}
+
+#game_txt_time{
+	color: #B6792A;
+	font: 72px Alexandra;	
+	width: 110px; 
+	text-align: center;
+}
