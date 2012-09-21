@@ -104,6 +104,7 @@
 		30E5649113A7FCAF007403D8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* HatGameiPad-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HatGameiPad-Prefix.pch"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HatGameiPad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HatGameiPad-Info.plist"; path = "../HatGameiPad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		9CCF6E18160C361D007BA2AA /* HatGameiPad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = HatGameiPad.entitlements; path = HatGameiPad/HatGameiPad.entitlements; sourceTree = "<group>"; };
 		9DAB84ED16086B6A001DD191 /* hat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = hat; sourceTree = "<group>"; };
 		9DAB84EF16086DED001DD191 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		9DAB84F116087007001DD191 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
@@ -177,6 +178,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				9CCF6E18160C361D007BA2AA /* HatGameiPad.entitlements */,
 				9DAB84ED16086B6A001DD191 /* hat */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -489,6 +491,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: VADIM KASSIN (744XFE3JS8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: VADIM KASSIN (744XFE3JS8)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -498,7 +506,10 @@
 				INFOPLIST_FILE = "HatGameiPad/HatGameiPad-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = HatGameiPad;
+				PROVISIONING_PROFILE = "BF32624B-FB0A-461C-9439-D60E0E09F091";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BF32624B-FB0A-461C-9439-D60E0E09F091";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 armv6 armv7";
 			};
 			name = Debug;
 		};
@@ -506,6 +517,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: VADIM KASSIN (744XFE3JS8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: VADIM KASSIN (744XFE3JS8)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HatGameiPad/HatGameiPad-Prefix.pch";
@@ -513,7 +530,10 @@
 				INFOPLIST_FILE = "HatGameiPad/HatGameiPad-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = HatGameiPad;
+				PROVISIONING_PROFILE = "BF32624B-FB0A-461C-9439-D60E0E09F091";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "BF32624B-FB0A-461C-9439-D60E0E09F091";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "i386 armv6 armv7";
 			};
 			name = Release;
 		};
